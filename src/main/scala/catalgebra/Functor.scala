@@ -1,3 +1,4 @@
+package catalgebra
 
 /**
  * A Functor converts one catagory to another equivalent category, where equivalant 

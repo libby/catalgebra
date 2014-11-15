@@ -1,3 +1,4 @@
+package catalgebra
 
 /**
  * Category with one type 

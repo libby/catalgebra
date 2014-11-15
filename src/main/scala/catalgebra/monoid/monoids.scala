@@ -1,3 +1,6 @@
+package catalgebra.monoid.monoids
+
+import catalgebra.Monoid
 
 /**
  * Example of Monoids:

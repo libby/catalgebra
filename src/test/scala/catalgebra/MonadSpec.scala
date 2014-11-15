@@ -1,6 +1,7 @@
+//package catalgebra
 
 import org.scalatest.{BeforeAndAfter, FlatSpec, Matchers}
-
+import catalgebra._
 /**
  * > test-only BasicMonadSpec
  */

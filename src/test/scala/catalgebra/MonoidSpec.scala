@@ -1,5 +1,8 @@
+package catalgebra
 
 import org.scalatest.{BeforeAndAfter, FlatSpec, Matchers}
+
+import catalgebra.monoid.monoids._
 
 /**
  * > test-only MonoidSpec

@@ -1,3 +1,4 @@
+package catalgebra
 
 /**
  * A - inner type

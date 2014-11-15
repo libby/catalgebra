@@ -1,8 +1,10 @@
+package catalgebra
 
 import org.scalatest.{BeforeAndAfter, FlatSpec, Matchers}
+import catalgebra.monoid.monoids._
 
 /**
- * > test-only OptionMonoidSpec
+ * > test-only catalgebra.OptionMonoidSpec
  */
 class OptionMonoidSpec extends FlatSpec
                         with Matchers
