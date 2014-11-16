@@ -19,7 +19,23 @@ trait Functor[F[_]] {
   
   /**
    * transform the category
+   * "lift a function taking one argument 'into the context of' some data type."
    */
-  def map[A,B](fa: F[A])(f: A => B): F[B]   
+  def map[A,B](fa: F[A])(f: A => B): F[B]
   
-} 
+}
+
+trait AdditionFunctorOps[F[_]] extends Functor[F] {
+
+  // product
+  def distribute[A,B](fab: F[(A, B)]):  (F[A], F[B]) = (map(fab)(_._1), map[(A, B),B](fab)(_._2))
+
+  // sum
+  def codistribute[A,B](e: Either[F[A],F[B]]): F[Either[A,B]] = {
+    e match {
+      case Left(fa) => map(fa)(Left(_))
+      case Right(fb) => map(fb)(Right(_))
+    }
+  }
+
+}
